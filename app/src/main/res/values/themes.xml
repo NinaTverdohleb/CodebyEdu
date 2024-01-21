@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CodebyEdu" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ce_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/ce_theme_light_onPrimary</item>
+    </style>
+
+    <style name="Theme.CodebyEdu" parent="Base.Theme.CodebyEdu" />
+</resources>
