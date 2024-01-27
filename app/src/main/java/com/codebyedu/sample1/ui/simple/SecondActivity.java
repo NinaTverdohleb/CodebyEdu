@@ -1,4 +1,4 @@
-package com.codebyedu.sample1;
+package com.codebyedu.sample1.ui.simple;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.codebyedu.sample1.R;
+import com.codebyedu.sample1.ui.compose.GameActivity;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -28,8 +31,9 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void play() {
-        //TODO: Implement play
+        startActivity(GameActivity.Companion.newIntent(this, getExtraUsername()));
     }
+
     public static Intent newIntent(MainActivity mainActivity, String username, String password) {
         Intent intent = new Intent(mainActivity, SecondActivity.class);
         intent.putExtra(EXTRA_USERNAME, username);
@@ -37,6 +41,6 @@ public class SecondActivity extends AppCompatActivity {
         return intent;
     }
 
-    static final String EXTRA_USERNAME = "com.codebyedu.sample1.SecondActivity.username";
-    static final String EXTRA_PASSWORD = "com.codebyedu.sample1.SecondActivity.password";
+    static final String EXTRA_USERNAME = "com.codebyedu.sample1.ui.simple.SecondActivity.username";
+    static final String EXTRA_PASSWORD = "com.codebyedu.sample1.ui.simple.SecondActivity.password";
 }

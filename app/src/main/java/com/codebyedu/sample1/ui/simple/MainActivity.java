@@ -1,12 +1,13 @@
-package com.codebyedu.sample1;
+package com.codebyedu.sample1.ui.simple;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.codebyedu.sample1.R;
 
 public class MainActivity extends AppCompatActivity {
     private EditText nameView;
