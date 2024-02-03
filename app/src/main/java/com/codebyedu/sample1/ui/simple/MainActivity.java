@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         String username = nameView.getText().toString();
         String password = passwordView.getText().toString();
         if (username.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, "Please enter username and password", Toast.LENGTH_SHORT)
+            Toast.makeText(this, getString(R.string.password_or_name_empty_error), Toast.LENGTH_SHORT)
                     .show();
         } else {
             startActivity(SecondActivity.newIntent(this, username, password));

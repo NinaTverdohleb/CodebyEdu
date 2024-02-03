@@ -1,17 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CodebyEdu</string>
     <string name="title_activity_codeby_game">CodebyGame</string>
     <string name="ok">OK</string>
     <string name="back_image">backImage</string>
-    <string name="play">Play</string>
+    <string name="play">Играть</string>
     <string name="app_icon">app icon</string>
     <string name="hello">Hello from codeby</string>
-    <string name="name">Name</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="congratulations">Congratulations, %1$s  you win!</string>
-    <string name="game_over">Game Over!  %1$s you loose!</string>
-    <string name="password_or_name_empty_error">Please enter username and password</string>
+    <string name="name">Имя</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="congratulations">Поздравляем, %1$s  вы выиграли!</string>
+    <string name="game_over">Игра окончена!  %1$s ты проиграл!</string>
+    <string name="password_or_name_empty_error">Пожадуйста введите логин и пароль</string>
     <string name="not_trusted_message">Ты не заслужил доверия как пользователь!!</string>
     <string name="root">Ты под рутом!</string>
     <string name="emulator">Ты на эмуляторе!</string>

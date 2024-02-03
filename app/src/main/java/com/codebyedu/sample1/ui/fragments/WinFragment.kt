@@ -46,12 +46,12 @@ class WinFragment : Fragment() {
     }
 
     private fun setWinText(textView: TextView) {
-        textView.text = "Congratulations, $userName\n you win!"
+        textView.text = getString(R.string.congratulations, userName)
         textView.setTextColor(Color.GREEN)
     }
 
     private fun setLooseText(textView: TextView) {
-        textView.text = "Game Over!\n $userName you loose!"
+        textView.text = getString(R.string.game_over, userName)
         textView.setTextColor(Color.RED)
     }
 

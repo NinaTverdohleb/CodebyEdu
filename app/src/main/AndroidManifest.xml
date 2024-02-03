@@ -23,7 +23,6 @@
         <activity
             android:name=".ui.simple.SecondActivity"
             android:exported="false"
-            android:label="@string/title_activity_second"
             android:theme="@style/Theme.CodebyEdu" />
         <activity
             android:name=".ui.simple.MainActivity"

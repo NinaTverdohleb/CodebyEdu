@@ -10,7 +10,8 @@
         android:src="@drawable/im_dino"
         android:layout_width="match_parent"
         android:scaleType="centerCrop"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:contentDescription="@string/back_image" />
 
     <TextView
         android:id="@+id/helloTitle"
@@ -25,11 +26,27 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Hello, Vasya" />
 
+    <TextView
+        android:id="@+id/notTrustedMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:text="@string/not_trusted_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helloTitle"
+        app:layout_constraintBottom_toTopOf="@id/btnPlay"/>
+
     <Button
         android:id="@+id/btnPlay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Play"
+        android:text="@string/play"
         android:textSize="20sp"
         android:layout_marginBottom="32dp"
         android:layout_marginHorizontal="32dp"
